@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        main{
+            width: 1200px;
+            height: 600px;
+            background-color: rgb(209, 209, 224);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: ifr 2fr 1fr;
+            grid-template-rows: 120px 600px 80px;
+            gap: 10px;
+
+        }
+        #logo,#section,footer{
+background-color:red;
+        }
+        #section{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+
+
+        }
+        #left,#right{
+            background-color: #30dd30;
+        }
+        #navigation{
+            background-color: blueviolet;
+           
+        }
+        #header{
+            background-color: aqua;
+            
+        }
+        
+       #right{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr 3fr;
+        gap: 10px;
+/* color: rgb(255, 127, 155); */
+       }
+       #body area{
+        background-color:orange;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <div id ='logo'> <h2>LOGO</h2></div>
+        <div id="navigation"> <h2>Navigation</h2></div>
+        <div id="header"> <h2>HEADER</h2></div>
+        <div id='section'>
+            <div id="left"> <h2>Sidebar Navigation</h2></div>
+            <div id="right">
+                <div id="body area"> <h2>Body Area</h2></div>
+            </div>
+        </div>
+        <footer><h2>FOOTER</h2></footer>
+
+    </main>
+    
+</body>
+</html>
